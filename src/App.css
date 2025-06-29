@@ -1,0 +1,274 @@
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    height: 125px;
+    margin: 55px 40px 0px 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.headerdate {
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 0px 0px 50px;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #262626;
+    margin-top: 10px;
+    display: inline;
+}
+
+#datesection {
+    padding-left: 4px;
+}
+
+.headerhr {
+    border: none;
+    height: 1px;
+    background-color: #a6a6a6;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 45px;
+    margin-right: 900px;
+    box-shadow: none;
+}
+
+.headermotivation {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px 0px 50px;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    font-weight: 200;
+    color: #262626;
+}
+
+.addsection {
+    display: flex;
+    align-items: center;
+    /* vertically centers them */
+    gap: 8px;
+    /* space between + and text */
+    padding: 50px 35px 0px 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: #262626;
+}
+
+.plus {
+    border: none;
+    background-color: #fafafa;
+    color: #262626;
+    font-size: large;
+    cursor: pointer;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.addtask {
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    margin: 10px 40px 0px 40px;
+    border: none;
+    height: 1px;
+    background-color: #a6a6a6;
+    box-shadow: none;
+}
+
+.todo-box {
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #262626;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftbox p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline;
+    width: 425px;
+}
+
+.desc {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    color: #4a4a4a;
+}
+
+.dividertodo {
+    border: none;
+    height: 1px;
+    background-color: #a6a6a6;
+    margin: 12px 0;
+    box-shadow: none;
+}
+
+.rightbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.donebtn, .delbtn {
+    padding: 6px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    height: 45px;
+    transition: all 0.2s ease-in-out;
+}
+
+.todo-box i {
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.donebtn:hover {
+    background-color: #3f892c;
+    transform: scale(1.03);
+}
+
+.donebtn:active {
+    background-color: #559530;
+    transform: scale(0.99);
+}
+
+.delbtn:hover {
+    background-color: #892c2c;
+    transform: scale(1.03);
+}
+
+.delbtn:active {
+    background-color: #953030;
+    transform: scale(0.99);
+}
+
+.plus:hover {
+    background-color: #f4f4f4;
+    transition: all 0.2s ease-in;
+    transform: scale(1.03);
+}
+
+.plus:active {
+    background-color: #ebebeb;
+    transform: scale(0.95);
+}
+
+.footer {
+    background-color: #d9d9d9;
+    padding: 1rem 0;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #262626;
+    position: relative;
+    width: 100%;
+}
+
+#trash1,
+#trash2,
+#trash3,
+#trash4 {
+    transition: all 0.3s ease;
+}
+
+#trash1:hover,
+#trash2:hover,
+#trash3:hover,
+#trash4:hover {
+    color: crimson;
+    transform: scale(1.03);
+}
+
+#trash1:active,
+#trash2:active,
+#trash3:active,
+#trash4:active {
+    color: rgb(191, 24, 58);
+    transform: scale(0.98);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    justify-content: space-between;
+}
+
+.todo-container {
+    flex-grow: 1;
+}
+
+#taskInput,
+#descInput {
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 6px;
+    background-color: #e7e7e7;
+}
+
+.addsection {
+    height: 100px;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-container {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.tasktaker {
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 6px;
+    background-color: #e7e7e7;
+}
