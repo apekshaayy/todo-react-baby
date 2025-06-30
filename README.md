@@ -13,7 +13,7 @@ A minimal, basic To-Do App which:
 # How to run: 
 ☆⋅⋆ ───── ⋆⋅☆⋅⋆ 
 ````bash
-git clone https://github.com/apekshaayy/todo-react-baby/edit/main/README.md
+git clone https://github.com/apekshaayy/todo-react-baby.git
 cd todo-react-baby
 npm install
 npm start
